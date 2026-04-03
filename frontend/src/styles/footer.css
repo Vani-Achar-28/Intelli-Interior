@@ -1,0 +1,9 @@
+.footer {
+  background: #2d4a3e !important;
+  color: rgba(245,237,224,0.7) !important;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}

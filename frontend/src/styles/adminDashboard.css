@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Jost:wght@300;400;500;600&display=swap');
+
+/* reuse all dashboard variables */
+:root {
+  --green-dark: #2d4a3e;
+  --green-mid: #3d6b5a;
+  --green-light: #5a8a6e;
+  --sage: #8fad9f;
+  --beige: #f5ede0;
+  --beige-dark: #ede0cc;
+  --cream: #faf6f0;
+  --rust: #7a3b1e;
+  --rust-light: #9a4f2a;
+  --text-dark: #1e2d27;
+  --text-mid: #4a6358;
+  --white: #ffffff;
+}
+
+/* TABLE WRAP */
+.admin-table-wrap {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  border: 1px solid rgba(122,59,30,0.08);
+  margin-top: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+thead {
+  background: var(--rust);
+}
+
+th {
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #f5ede0;
+  font-weight: 500;
+  font-family: 'Jost', sans-serif;
+}
+
+td {
+  padding: 14px 18px;
+  color: #444;
+  font-size: 14px;
+  border-bottom: 1px solid #f0ebe3;
+  font-family: 'Jost', sans-serif;
+}
+
+tr:last-child td { border-bottom: none; }
+tbody tr:hover { background: #fdf8f3; }
+
+/* STATUS SELECT */
+select {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(122,59,30,0.3);
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  background: #fdf8f3;
+  color: #1c1c1a;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+select:focus { border-color: var(--rust); }
+select option { background: white; color: #1c1c1a; }
+
+/* DANGER BUTTON */
+.admin-danger-btn {
+  background: transparent;
+  border: 1px solid #e53935;
+  color: #e53935;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+}
+
+.admin-danger-btn:hover {
+  background: #e53935;
+  color: white;
+}
+
+/* CHARTS inside admin */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.chart-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  border: 1px solid rgba(122,59,30,0.08);
+}
+
+.chart-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--green-dark);
+}
+
+.chart-box {
+  position: relative;
+  height: 280px;
+  width: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .charts-grid { grid-template-columns: 1fr; }
+  td, th { padding: 10px 12px; font-size: 13px; }
+}
+
+.chart-box {
+  background: transparent !important;
+}
+
+.dashboard-main > div > div {
+  background: transparent !important;
+}
+.admin-profile-wrap {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.admin-profile-card {
+  background: white !important;
+}
+.dashboard-main .welcome ~ div > div:first-child {
+  background: white !important;
+}
+

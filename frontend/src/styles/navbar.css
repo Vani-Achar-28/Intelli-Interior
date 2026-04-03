@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #7a3b1e;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+}
+
+.logo-text {
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f5ede0;
+  text-decoration: none;
+  letter-spacing: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.logo-text:hover { color: #fff; }
+
+.logo-leaf {
+  font-size: 18px;
+  animation: sway 3s ease-in-out infinite;
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ALL nav links — same color as scroll buttons */
+.navbar-links a {
+  color: #f5ede0;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 1px;
+  background: #f5ede0;
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover { color: #fff; }
+.navbar-links a:hover::after { width: 100%; }
+
+/* SCROLL BUTTONS (Home / Approach / Shop / About) */
+.nav-scroll-btn {
+  background: transparent;
+  border: none;
+  color: #f5ede0;
+  font-size: 13px;
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-scroll-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 1px;
+  background: #f5ede0;
+  transition: width 0.3s ease;
+}
+
+.nav-scroll-btn:hover { color: #fff; }
+.nav-scroll-btn:hover::after { width: 100%; }
+
+/* REGISTER — same color, no special styling */
+.btn-register {
+  color: #f5ede0 !important;
+  font-size: 13px !important;
+  letter-spacing: 2px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  border-radius: 0 !important;
+}
+
+.btn-register:hover {
+  color: #fff !important;
+  transform: none !important;
+}
+
+.btn-register::after { display: none !important; }
+
+.btn-logout {
+  background: transparent;
+  border: 1px solid rgba(245,237,224,0.4);
+  color: #f5ede0;
+  padding: 7px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  border-color: #f5ede0;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar { padding: 16px 24px; }
+  .navbar-links { gap: 16px; }
+}
+
+/* REDUCE NAVBAR SIZE */
+.navbar {
+  padding: 12px 60px !important;
+}
+
+.logo-text {
+  font-size: 15px !important;
+  letter-spacing: 2px !important;
+}
+
+.navbar-links {
+  gap: 24px !important;
+}
+
+.navbar-links a {
+  font-size: 12px !important;
+  letter-spacing: 1.5px !important;
+}
+
+.btn-logout {
+  padding: 5px 16px !important;
+  font-size: 11px !important;
+}
+.navbar-links li a {
+  color: #f5ede0 !important;
+}
+
+.nav-scroll-btn {
+  color: #ffffff !important;
+}
+
+.navbar-links li a {
+  color: #f5ede0 !important;
+}
+.navbar-links li a {
+  font-weight: 500 !important;
+}
+.navbar-links li a,
+.navbar-links li button {
+  font-weight: 500 !important;
+  color: #f5ede0 !important;
+  letter-spacing: 1.5px !important;
+}
+.navbar-links li a,
+.navbar-links li button {
+  font-weight: 500 !important;
+  color: #f5ede0 !important;
+  letter-spacing: 1.5px !important;
+}
