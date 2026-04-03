@@ -21,7 +21,7 @@ function Layout() {
 
   return (
     <>
-      {!isDashboard && <Navbar />}
+      {<Navbar />}
       <Toaster position="top-right" />
       <Routes>
         <Route path="/" element={<Home />} />
