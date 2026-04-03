@@ -22,6 +22,7 @@
   display: flex;
   min-height: 100vh;
   background: var(--cream);
+  padding-top: 64px;
 }
 
 /* ===== SIDEBAR ===== */
