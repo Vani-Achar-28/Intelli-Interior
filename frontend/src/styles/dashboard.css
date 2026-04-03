@@ -22,7 +22,6 @@
   display: flex;
   min-height: 100vh;
   background: var(--cream);
-  padding-top: 64px;
 }
 
 /* ===== SIDEBAR ===== */
@@ -42,7 +41,7 @@
 
 .sidebar-user {
   text-align: center;
-  padding: 20px 20px 24px;
+  padding:0px 20px 24px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
   margin-bottom: 16px;
 }
