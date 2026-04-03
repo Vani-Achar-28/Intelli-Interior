@@ -27,14 +27,14 @@
 /* ===== SIDEBAR ===== */
 .sidebar {
   width: 240px;
-  min-height:100vh;
+  min-height:calc(100vh - 64px);
   background: var(--green-dark);
   display: flex;
   flex-direction: column;
   padding: 20px 0;
   position: fixed;
   left: 0;
-  top:0;
+  top:64px;
   z-index: 50;
   box-shadow: 4px 0 20px rgba(45,74,62,0.15);
 }
