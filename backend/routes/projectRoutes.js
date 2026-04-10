@@ -15,7 +15,7 @@ router.post("/", authMiddleware, upload.single("image"), async (req, res) => {
       category: req.body.category,
       status: req.body.status,
       user: req.user.id,
-      image: req.file ? req.file.filename : null,
+      image: req.file ? req.file.path : null,
     });
 
     res.status(201).json(project);
@@ -61,7 +61,7 @@ router.put("/:id", authMiddleware, upload.single("image"), async (req, res) => {
     };
 
     if (req.file) {
-      updateData.image = req.file.filename;
+      updateData.image = req.file.path;
     }
 
     const project = await Project.findByIdAndUpdate(req.params.id, updateData, {
