@@ -195,7 +195,7 @@ function Dashboard() {
                   <div className="project-card" key={p._id}>
                     {p.image ? (
                       <img
-                        src={`http://localhost:5000/uploads/${p.image}`}
+                        src={p.image}
                         alt={p.title}
                         style={{ width: "100%", height: "160px", objectFit: "cover", borderRadius: "12px", marginBottom: "12px", cursor: "pointer" }}
                         onClick={() => navigate(`/user/project/${p._id}`)}

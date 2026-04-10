@@ -43,7 +43,7 @@ function ProjectDetail() {
       {/* BIG IMAGE */}
       {project.image ? (
         <img
-          src={`http://localhost:5000/uploads/${project.image}`}
+          src={project.image}
           alt={project.title}
           style={{
             width: "100%",
