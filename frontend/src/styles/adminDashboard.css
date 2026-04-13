@@ -149,3 +149,15 @@ select option { background: white; color: #1c1c1a; }
   background: white !important;
 }
 
+/* Fix sidebar gap with navbar */
+.dashboard-layout {
+  min-height: calc(100vh - 48px); /* matches reduced navbar height */
+}
+
+.sidebar {
+  top: 0 !important;
+  align-self: flex-start;
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 48px);
+}
